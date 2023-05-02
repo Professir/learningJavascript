@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper .gradient-box {
+    background: linear-gradient(to left top, #977DFE, #6878FF);
+}
+
+.row :where(.column, button) {
+    width: calc(100% / 2 - 12px);
+}
+
+.colors input {
+    height: 41px;
+    width: calc(100% / 2 - 20px);
+}
+
+.buttons button {
+    margin: 0 0 -15px;
+}

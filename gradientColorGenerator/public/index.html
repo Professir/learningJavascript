@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts(Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="font-poppins flex items-center justify-center min-h-screen bg-[#8A6CFF]">
+    <!-- Wrapper -->
+    <div class="wrapper w-[450px] p-[25px] rounded-md bg-zinc-100">
+        <!-- Gradient-Box -->
+        <div class="gradient-box w-full h-[220px] rounded-md"></div>
+        <!-- Row Options -->
+        <div class="row options 
+        flex my-5 justify-between">
+            <!-- Column Direction -->
+            <div class="column direction">
+                <p class="text-lg mb-2">Direction</p>
+                <!-- Select-box -->
+                <div class="select-box
+                border border-solid border-[#aaa] rounded-md py-2 px-4 ">
+                    <select class="w-full border-none outline-none bg-none text-lg">
+                        <option value="to top">Top</option>
+                        <option value="to right top">Right top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left top</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Column colors -->
+            <div class="column colors 
+            ml-16">
+                <p>Colors</p>
+                <!-- inputs -->
+                <div class="input
+                last:ml-2">
+                    <input class="" type="color" value="#5665E9">
+                    <input class="" type="color" value="#A271F8">
+                </div>
+            </div>
+        </div>
+        <textarea class="row
+        w-full c-[#333] resize-none text-[1.05rem] rounded-md py-3 px-4 border border-solid border-[#ccc]" disabled>background: linear-gradient(to left top, #977DFE, #6878FF);
+        </textarea>
+        <!-- Row buttons -->
+        <div class="row buttons
+        flex justify-between">
+            <button class="refresh
+            py-4 text-[1.09rem] rounded-md cursor-pointer border-none outline-none bg-[#6c757d] caret-zinc-100 ">Refresh Colors</button>
+            <button class="copy
+            py-4 text-[1.09rem] rounded-md cursor-pointer border-none outline-none bg-[#8A6CFF] caret-zinc-100">Copy Code</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
