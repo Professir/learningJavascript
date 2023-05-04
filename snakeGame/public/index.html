@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-[#E3F2FD]">
+    <!-- wrapper -->
+    <div class="w-[65vmin] h-[70vmin] bg-[#293447] rounded-md flex flex-col overflow-hidden">
+        <!-- Game Details -->
+        <div class="text-[#B8C6DC] text-xl font-medium py-5 px-7 flex justify-between">
+            <!-- Score -->
+            <span id="score" class="">Score: 0</span>
+            <!-- High Score -->
+            <span id="high-score" class="">High Score: 0</span>
+        </div>
+        <!-- Play Board -->
+        <div id="playBoard" class="w-full h-full bg-[#212837] grid"></div>
+        <div id="controls" class=""></div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
