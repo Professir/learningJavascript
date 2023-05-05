@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts bruno ace sc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="font-bruno text-zinc-100">
+    <section class="bg-orange-900 flex items-center justify-center h-screen w-full">
+        <!-- container -->
+        <div class="container
+        flex items-center justify-center bg-orange-500 flex-col h-[500px] rounded-md">
+            <!-- text -->
+            <div class="text mb-16">
+                <span class="text-4xl ">StopWatch</span>
+            </div>
+            <!-- duration -->
+            <div class="duration
+            flex items-center justify-center">
+                <!-- minutes -->
+                <span class="minutes 
+                text-4xl">00</span>
+                <!-- colon -->
+                <span class="ml-5"><sub>:</sub></span>
+                <!-- seconds -->
+                <span class="seconds
+                text-4xl ml-5">00</span>
+                <!-- colon -->
+                <span class="ml-5"><sub>:</sub></span>
+                <!-- miliseconds -->
+                <span class="miliseconds 
+                text-4xl ml-5">00</span>
+            </div>
+            <!-- buttons -->
+            <div class="btns mt-10">
+                <!-- start -->
+                <button class="start text-xl py-4 px-3 bg-purple-800 rounded-lg mr-5">Start</button>
+                <!-- Stop -->
+                <button class="stop text-xl py-4 px-3 bg-purple-800 rounded-lg mr-5">Stop</button>
+                <!-- Reset -->
+                <button class="reset text-xl py-4 px-3 bg-purple-800 rounded-lg">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
