@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts(Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="font-poppins flex items-center justify-center min-h-screen">
+    <!-- popup -->
+    <div class="popup 
+    w-[22rem]">
+        <!-- picker -->
+        <div class="picker 
+        py-8 flex justify-center bg-[#e3f2fd]">
+            <button id="color-picker" class="outline-none border-none caret-zinc-100 text-base cursor-pointer py-3 px-5 bg-[#5372f0] rounded-md text-zinc-100">Pick Color</button>
+        </div>
+        <!-- Picked-colors -->
+        <div class="picked-colors hidden
+        my-3 mx-4">
+            <header class="flex justify-between">
+                <!-- Title -->
+                <p class="title text-base">Picked colors</p>
+                <!-- Clear All -->
+                <span class="clear-all 
+                text-[#5372f0] cursor-pointer text-[.9rem]">Clear All</span>
+            </header>
+            <!-- all colors -->
+            <ul class="all-colors
+            my-3 flex-wrap"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup :where(.picker, header, .all-colors, .color) {
+    display: flex;
+    align-items: center;
+}
+
+.all-colors .color {
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
