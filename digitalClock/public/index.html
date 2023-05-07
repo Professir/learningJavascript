@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Orbitron fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="font-orbitron">
+    <section class="min-h-screen w-full flex items-center justify-center bg-[#F0F9FF] px-5">
+        <!-- container -->
+        <div class="container
+        flex items-center justify-center h-[220px] max-w-[560px] bg-zinc-100 shadow-contain-sha rounded-xl w-full relative">
+        <!-- icons -->
+        <div class="icons
+        ">
+        <i class="fas fa-moon
+        absolute right-4 top-4 h-8 w-8 bg-[#24292D] text-[#fff] text-center leading-[33px] rounded-full text-[14px] cursor-pointer"></i>
+        <i class="fas fa-sun
+        absolute right-4 top-4 h-8 w-8 bg-[#24292D] text-[#fff] text-center leading-[33px] rounded-full text-[14px] cursor-pointer opacity-0 pointer-events-none"></i>
+    </div>
+    <!-- time -->
+    <div class="time
+    flex items-center">
+    <!-- time-colon -->
+    <div class="time-colon
+    flex items-center relative">
+    <!-- time-text -->
+    <div class="time-text
+    flex items-center flex-col justify-center bg-[#F0F9FF] shadow-contain-sha h-24 w-24 rounded-md text-4xl font-semibold">
+    <!-- num text -->
+    <span class="num hour_num">08</span>
+    <span class="text
+    text-xs font-bold tracking-[2px]">Hours</span>
+</div>
+<!-- colon -->
+<span class="colon 
+text-4xl font-semibold text-[2.5rem] mx-3">:</span>
+</div>
+<!-- time-colon -->
+<div class="time-colon
+flex items-center relative">
+<!-- time-text -->
+<div class="time-text
+                    flex items-center flex-col justify-center bg-[#F0F9FF] shadow-contain-sha h-24 w-24 rounded-md text-4xl font-semibold">
+                    <!-- num text -->
+                    <span class="num min_num">45</span>
+                    <span class="text
+                    text-xs font-bold tracking-[2px]">Minutes</span>
+                </div>
+                <!-- colon -->
+                <span class="colon
+                text-4xl font-semibold text-[2.5rem] mx-3">:</span>
+            </div>
+            <!-- time-colon -->
+            <div class="time-colon
+            flex items-center relative">
+            <!-- time-text -->
+            <div class="time-text
+            flex items-center flex-col justify-center bg-[#F0F9FF] shadow-contain-sha h-24 w-24 rounded-md text-4xl font-semibold">
+            <!-- num text -->
+            <span class="num sec_num">06</span>
+            <span class="text
+            text-xs font-bold tracking-[2px]">Seconds</span>
+        </div>
+        <!-- am-pm -->
+        <span class="am_pm
+        absolute top-0 -right-12 text-xl font-bold tracking-[1px]">AM</span>
+    </div>
+</div>
+</div>
+</section>
+<script src="./script.js"></script>
+</body>
+</html>

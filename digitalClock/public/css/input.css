@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    transition: all .4s ease;
+}
+
+section.dark {
+    background: #24292D;
+}
+
+section.dark .container {
+    background: #323840;
+}
+
+section.dark .container .icons i {
+    background: #fff;
+    color: #323840;
+}
+
+section.dark .container .icons i.fa-sun {
+    opacity: 1;
+    pointer-events: auto;
+    font-size: 16px;
+}
+
+section.dark .time .time-colon .time-text {
+    background: #24292D;
+}
+
+section.dark .time .time-text .num,
+section.dark .time .colon {
+    color: #fff;
+}
+
+section.dark .time .time-colon .text {
+    color: #fff     ;
+}
+
+section.dark .time .time-colon .am_pm {
+    color: #fff;
+}
