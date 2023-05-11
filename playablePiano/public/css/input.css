@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.piano-keys .key {
+    cursor: pointer;
+    user-select: none;
+    color: #a2a2a2;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.keys-checkbox input::before {
+    transition: all .3s ease;
+}
+
+.piano-keys .white {
+    width: 70px;
+    height: 230px;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.piano-keys .white.active {
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, .2);
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+
+.piano-keys .black {
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    position: relative;
+    margin: 0 -22px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+.piano-keys .black.active {
+    box-shadow: inset -5px 5px 20px rgba(255, 255, 255, .1);
+    background: linear-gradient(to bottom, #000, #434343);
+}
+
+.piano-keys .key.hide span {
+    display: none;
+}

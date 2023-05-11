@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Taken from CodingNepal -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts(Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body class="font-poppins flex items-center justify-center min-h-screen bg-[#e3f2fd] px-3">
+    <!-- Wrapper -->
+    <div class="wrapper
+    bg-[#141414] w-[780px] rounded-[20px] py-9 px-10">
+        <header class="text-[#b2b2b2] flex items-center justify-between">
+            <h2 class="text-2xl">Playable PIANO</h2>
+            <!-- Column volume-slider -->
+            <div class="column volume-slider
+            flex items-center">
+                <span class="font-medium mr-4 text-lg">Volume</span>
+                <input type="range" min="0" max="1" value="0.5" step="any" class="accent-zinc-100 outline-none">
+            </div>
+            <!-- Keys-checkbox -->
+            <div class="column keys-checkbox
+            flex items-center">
+                <span class="font-medium mr-4 text-lg">Show Keys</span>
+                <input checked type="checkbox" class="appearance-none outline-none w-14 h-7 bg-[#4b4b4b] rounded-[30px] cursor-pointer relative 
+                before:absolute before:bg-[#8c8c8c] before:h-5 before:w-5 before:rounded-[30px] before:top-1/2 before:left-[5px] before:-translate-y-1/2 
+                checked:before:left-8 checked:before:bg-zinc-100">
+            </div>
+        </header>
+        <!-- Piano Keys -->
+        <ul class="piano-keys
+        flex mt-10">
+            <li class="key white" data-key="a"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">a</span></li>
+            <li class="key black" data-key="w"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">w</span></li>
+            <li class="key white" data-key="s"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">s</span></li>
+            <li class="key black" data-key="e"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">e</span></li>
+            <li class="key white" data-key="d"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">d</span></li>
+            <li class="key white" data-key="f"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">f</span></li>
+            <li class="key black" data-key="t"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">t</span></li>
+            <li class="key white" data-key="g"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">g</span></li>
+            <li class="key black" data-key="y"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">y</span></li>
+            <li class="key white" data-key="h"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">h</span></li>
+            <li class="key black" data-key="u"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">u</span></li>
+            <li class="key white" data-key="j"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">j</span></li>
+            <li class="key white" data-key="k"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">k</span></li>
+            <li class="key black" data-key="o"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">o</span></li>
+            <li class="key white" data-key="l"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">l</span></li>
+            <li class="key black" data-key="p"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">p</span></li>
+            <li class="key white" data-key=";"><span class="absolute bottom-5 w-full text-[1.13rem] text-center">;</span></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
